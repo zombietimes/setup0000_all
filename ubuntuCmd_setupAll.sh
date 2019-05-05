@@ -14,6 +14,8 @@ git clone https://github.com/zombietimes/setup0010_directory.git
 git clone https://github.com/zombietimes/setup0020_ubuntu.git
 git clone https://github.com/zombietimes/setup0030_loomNetwork.git
 git clone https://github.com/zombietimes/setup0040_nodeJs.git
+git clone https://github.com/zombietimes/setup0041_nvm.git
+git clone https://github.com/zombietimes/setup0042_yarn.git
 git clone https://github.com/zombietimes/setup0050_truffle.git
 git clone https://github.com/zombietimes/setup0060_openZeppelin.git
 git clone https://github.com/zombietimes/setup0070_ganache.git
@@ -53,13 +55,28 @@ read Wait;
 #sh $PATH_CURRENT/setup0030_loomNetwork/ubuntuCmd_setupLoomNetwork.sh
 
 echo "\n<Setup>"
-echo "Set up node.js + npm."
+echo "Set up node.js. : Select one below."
+echo ""
+echo "-- Easy --"
 echo "[RUN] sh ./setup0040_nodeJs/ubuntuCmd_setupNodeJs.sh"
+echo "-- Latest --"
+echo "[RUN] sh ./setup0041_nvm/ubuntuCmd_setupNvm.sh"
 echo ""
 echo "[Enter] to continue."
 echo "\n"
 read Wait;
 #sh $PATH_CURRENT/setup0040_nodeJs/ubuntuCmd_setupNodeJs.sh
+#sh $PATH_CURRENT/setup0041_nvm/ubuntuCmd_setupNvm.sh
+
+echo "\n<Setup>"
+echo "Set up yarn. : If you want to use."
+echo ""
+echo "[RUN] sh ./setup0042_yarn/ubuntuCmd_setupYarn.sh"
+echo ""
+echo "[Enter] to continue."
+echo "\n"
+read Wait;
+#sh $PATH_CURRENT/setup0042_yarn/ubuntuCmd_setupYarn.sh
 
 echo "\n<Setup>"
 echo "Set up truffle framework."
